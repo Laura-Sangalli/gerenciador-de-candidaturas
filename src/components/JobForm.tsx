@@ -1,0 +1,44 @@
+import { useState } from "react";
+import { createJob } from "../services/api";
+
+
+function JobForm(){
+    const [title, setTitle] = useState("");
+    const [company, setCompany] = useState("");
+
+      const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        console.log("Botão clicado!");
+
+        await createJob({
+        title,
+        company,
+        url: "",
+        status: "Applied"
+        });
+
+        alert("Vaga salva!");
+    };
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <div>
+                <label >Vaga</label>
+                <input value={title} 
+                onChange={(e) => setTitle(e.target.value)}/>
+            </div>
+
+                        <div>
+                <label >Empresa</label>
+                <input value={company} 
+                onChange={(e) => setCompany(e.target.value)}/>
+            </div>
+
+            <button type="submit">Salvar</button>
+
+        </form>
+    )
+}
+
+export default JobForm;
