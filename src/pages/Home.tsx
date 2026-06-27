@@ -3,7 +3,7 @@ import JobForm from "../components/JobForm";
 function Home(){
     return (
         <>
-        <h1>Job Tracker</h1>
+        <h1 className="title">Job Tracker</h1>
         <JobForm/>
         </>
     )

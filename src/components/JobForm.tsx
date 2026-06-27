@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { createJob } from "../services/api";
-
+import '../index.css'
 
 function JobForm(){
     const [title, setTitle] = useState("");
@@ -22,16 +22,16 @@ function JobForm(){
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
+        <form onSubmit={handleSubmit} className="formulario">
+            <div className="campo_input">
                 <label >Vaga</label>
                 <input value={title} 
                 onChange={(e) => setTitle(e.target.value)}/>
             </div>
 
-                        <div>
+            <div className="campo_input">
                 <label >Empresa</label>
-                <input value={company} 
+                <input value={company}
                 onChange={(e) => setCompany(e.target.value)}/>
             </div>
 

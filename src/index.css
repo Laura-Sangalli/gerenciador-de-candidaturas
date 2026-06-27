@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -11,7 +13,7 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+    --sans: system-ui, 'Inter', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
@@ -33,8 +35,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
+    --text-h: #14685a;
+    --bg: #121427;
     --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;
@@ -108,4 +110,34 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+.title{
+  font-family: 'Prata', serif;
+  font-size: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.campo_input{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.campo_input label{
+  width: 80px;
+  text-align: right;
+}
+
+.campo_input input{
+  width: 200px;
 }
