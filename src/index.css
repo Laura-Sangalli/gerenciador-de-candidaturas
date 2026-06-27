@@ -134,6 +134,7 @@ code {
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  margin-bottom: 2rem;
 }
 
 .campo_input label{
@@ -144,3 +145,30 @@ code {
 .campo_input input, .campo_input select{
   width: 200px;
 }
+
+.social{
+  color: var(--text);
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.app{
+    position:relative;
+    min-height:100vh;
+    overflow:hidden;
+    background:#191C27;
+}
+
+.background-decoration{
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    z-index:0;
+
+    pointer-events:none;
+}
+

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { createJob } from "../services/api";
 import '../index.css'
 
-type opcoesDeSituacao = 'Inscrito' | 'Teste lógica feito' | 'Teste idioma feito' | 'Entrevista realizada' | 'Dinâmica realizada' | 'Documentos Enviados' | 'Vaga salva';
+type opcoesDeSituacao = 'Inscrito' | 'Teste de lógica concluído' | 'Teste de idiomas concluído' | 'Entrevista realizada' | 'Dinâmica realizada' | 'Documentos Enviados' | 'Vaga salva' | 'Vaga finalizada';
 
 function JobForm(){
     const [title, setTitle] = useState("");
@@ -53,12 +53,13 @@ function JobForm(){
                 <label >Situação</label>
                 <select value={situacao} onChange={handleChange}>
                    <option value="Inscrito">Inscrito</option>
-                   <option value="Teste lógica feito">Teste lógica feito</option>
-                    <option value="Teste idioma feito">Teste idioma feito</option>
+                   <option value="Teste de lógica concluído">Teste de lógica concluído</option>
+                    <option value="Teste de idiomas concluído">Teste de idiomas concluído</option>
                     <option value="Entrevista realizada">Entrevista realizada</option>
                     <option value="Dinâmica realizada">Dinâmica realizada</option>
                     <option value="Documentos Enviados">Documentos Enviados</option>
                     <option value="Vaga salva">Vaga salva</option>
+                    <option value="Vaga finalizada">Vaga finalizada</option>
                 </select>
              </div>
 
