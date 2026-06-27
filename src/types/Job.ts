@@ -3,6 +3,6 @@ export interface Job{
     title: string;
     company: string;
     url: string;
-    status:string;    
+    situacao:string;    
 
 }
