@@ -1,0 +1,31 @@
+export default function BackgroundDecoration() {
+  return (
+    <svg
+      className="background-decoration"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 250 250"
+    >
+      <defs>
+        <pattern
+          id="grid"
+          width="10"
+          height="10"
+          patternUnits="userSpaceOnUse"
+        >
+          <path
+            d="M 10 0 L 0 0 0 10"
+            fill="none"
+            stroke="#696f7e"
+            strokeWidth="0.1"
+          />
+        </pattern>
+      </defs>
+
+      <rect
+        width="100%"
+        height="100%"
+        fill="url(#grid)"
+      />
+    </svg>
+  );
+}

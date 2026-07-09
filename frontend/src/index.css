@@ -130,11 +130,13 @@ code {
 }
 
 .formulario{
+  position: initial;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12px;
   margin-bottom: 2rem;
+  background-color: --bg;
 }
 
 .campo_input label{
@@ -150,25 +152,30 @@ code {
   color: var(--text);
   margin-top: 2rem;
   padding-top: 2rem;
+  background-color: var(--bg);
 }
 
-.app{
-    position:relative;
-    min-height:100vh;
-    overflow:hidden;
-    background:#191C27;
+.app {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
-.background-decoration{
-    position:absolute;
+/* Fundo */
+.background-decoration {
+    position: absolute;
+    inset: 0;
 
-    inset:0;
+    width: 100%;
+    height: 100%;
 
-    width:100%;
-    height:100%;
+    z-index: 0;
+    pointer-events: none;
+}
 
-    z-index:0;
-
-    pointer-events:none;
+/* Conteúdo */
+.content {
+    position: relative;
+    z-index: 1;
 }
 
