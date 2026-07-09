@@ -21,7 +21,6 @@ Para o backend, execute também na CLI de seu computador:
 cd ..
 cd backend
 python -m venv .venv
-
 ```
 
 ```
@@ -35,7 +34,6 @@ source .venv/bin/activate
 ```
 
 ```
-
 pip install -r requirements.txt
 
 uicorn app.main:app --reload
