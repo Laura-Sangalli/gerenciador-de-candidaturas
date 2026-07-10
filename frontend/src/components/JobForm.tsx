@@ -32,19 +32,19 @@ function JobForm(){
     return (
         <form onSubmit={handleSubmit} className="formulario">
             <div className="campo_input">
-                <label >Vaga</label>
+                <label >Vaga </label>
                 <input value={title} 
                 onChange={(e) => setTitle(e.target.value)}/>
             </div>
 
             <div className="campo_input">
-                <label >Empresa</label>
+                <label >Empresa </label>
                 <input value={company}
                 onChange={(e) => setCompany(e.target.value)}/>
             </div>
 
             <div className="campo_input">
-                <label >URL</label>
+                <label >URL </label>
                 <input value={url}
                 onChange={(e) => setUrl(e.target.value)}/>
             </div>
@@ -63,7 +63,7 @@ function JobForm(){
                 </select>
              </div>
 
-            <button type="submit">Salvar</button>
+            <button type="submit" className="button-icon">Salvar</button>
 
         </form>
     )

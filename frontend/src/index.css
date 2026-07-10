@@ -4,7 +4,7 @@
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
-  --border: #e5e4e7;
+  --border: #aa3bff;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
@@ -13,7 +13,7 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-    --sans: system-ui, 'Inter', Roboto, sans-serif;
+    --sans:  'Inter', Roboto, ui-monospace, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
@@ -28,7 +28,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   @media (max-width: 1024px) {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -37,7 +37,7 @@
     --text: #8aa5b1;
     --text-h: #8aa5b1;
     --bg: #171a24;
-    --border: #2e303a;
+    --border: #aa3bff;
     --code-bg: #1f2028;
     --accent: #c084fc;
     --accent-bg: rgba(192, 132, 252, 0.15);
@@ -46,10 +46,15 @@
     --shadow:
     rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
     --input-text:#c084fc;
+  
   }
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
+  .button-icon {
+    border-radius: 5px;
+    background-color: var(--text);
+    vector-effect: non-scaling-size;
+    color: #08060d;
+    border-color: var(--accent);
   }
 }
 
@@ -80,10 +85,13 @@ h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
   margin: 32px 0;
+  text-shadow: 1px 1px 1px #ffffff;
   @media (max-width: 1024px) {
     font-size: 36px;
     margin: 20px 0;
+
   }
+  ;
 }
 h2 {
   font-size: 24px;
@@ -125,7 +133,9 @@ code {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
+  border-color: var(--border);
+  stroke-color: var(--border);
+  border-radius: 10%;
 
 }
 
@@ -145,14 +155,31 @@ code {
 }
 
 .campo_input input, .campo_input select{
-  width: 200px;
+  height: 20px;
+  width: 210px;
+  border-color: var(--accent) var(--border) var(--text);
+  border-radius: 1cap;
+  margin-left: 5px;
+}
+
+.campo_input select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+  width: 216px;
+  height: 26px;
 }
 
 .social{
-  color: var(--text);
+  color: var(--accent);
   margin-top: 2rem;
   padding-top: 2rem;
   background-color: var(--bg);
+}
+
+.select{
+  height: 20px;
 }
 
 .app {
@@ -165,9 +192,9 @@ code {
 .background-decoration {
     position: absolute;
     inset: 0;
-
-    width: 100%;
-    height: 100%;
+    margin-top: -5cap;
+    width: 120%;
+    height: 120%;
 
     z-index: 0;
     pointer-events: none;
