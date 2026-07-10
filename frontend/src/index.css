@@ -156,7 +156,7 @@ code {
 
 .campo_input input, .campo_input select{
   height: 20px;
-  width: 360px;
+  width: 420px;
   font-size: 16.5px;
   border-color: var(--accent) var(--border) var(--text);
   border-radius: 1cap;
@@ -168,7 +168,7 @@ code {
     -webkit-appearance: none;
     -moz-appearance: none;
 
-  width: 366px;
+  width: 426px;
   height: 26px;
 }
 
