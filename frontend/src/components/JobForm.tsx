@@ -63,8 +63,11 @@ function JobForm(){
                 </select>
              </div>
 
-            <button type="submit" className="button-icon">Salvar</button>
-
+            <div className="div-buttons">
+                <button type="submit" className="button-icon">Salvar</button>
+                <button type="submit" className="button-icon">Cancelar</button>
+            </div>
+                <button type="submit" className="button-icon">Ver minhas vagas</button>
         </form>
     )
 }

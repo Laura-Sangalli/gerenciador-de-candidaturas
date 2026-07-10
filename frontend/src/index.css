@@ -55,6 +55,7 @@
     vector-effect: non-scaling-size;
     color: #08060d;
     border-color: var(--accent);
+    margin: 0cap 0.36cap 0.1cap 0.36cap;
   font: 18px/145% var(--sans);
   }
 }
@@ -159,7 +160,7 @@ code {
   width: 420px;
   font-size: 16.5px;
   border-color: var(--accent) var(--border) var(--text);
-  border-radius: 1cap;
+  border-radius: 0.8cap;
   margin-left: 5px;
 }
 
@@ -174,8 +175,7 @@ code {
 
 .social{
   color: var(--accent);
-  margin-top: 2rem;
-  padding-top: 2rem;
+  margin-top: 10px;
   background-color: var(--bg);
 }
 
@@ -191,6 +191,7 @@ code {
 
 /* Fundo */
 .background-decoration {
+  display: flex;
     position: absolute;
     inset: 0;
     margin-top: -5cap;
@@ -205,6 +206,11 @@ code {
 /* Conteúdo */
 .content {
     position: relative;
+    
     z-index: 1;
 }
 
+.div-buttons{
+  flex-direction: row;
+
+}
