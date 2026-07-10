@@ -67,7 +67,7 @@ function JobForm(){
                 <button type="submit" className="button-icon">Salvar</button>
                 <button type="submit" className="button-icon">Cancelar</button>
             </div>
-                <button type="submit" className="button-icon">Ver minhas vagas</button>
+                <button type="submit" className="button-icon" onClick={() => window.open("/jobs")}>Ver minhas vagas</button>
         </form>
     )
 }
