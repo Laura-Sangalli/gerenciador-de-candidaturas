@@ -55,6 +55,7 @@
     vector-effect: non-scaling-size;
     color: #08060d;
     border-color: var(--accent);
+  font: 18px/145% var(--sans);
   }
 }
 
@@ -63,7 +64,6 @@
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -156,7 +156,8 @@ code {
 
 .campo_input input, .campo_input select{
   height: 20px;
-  width: 210px;
+  width: 360px;
+  font-size: 16.5px;
   border-color: var(--accent) var(--border) var(--text);
   border-radius: 1cap;
   margin-left: 5px;
@@ -167,7 +168,7 @@ code {
     -webkit-appearance: none;
     -moz-appearance: none;
 
-  width: 216px;
+  width: 366px;
   height: 26px;
 }
 
@@ -198,7 +199,8 @@ code {
 
     z-index: 0;
     pointer-events: none;
-}
+    stroke: none;
+  }
 
 /* Conteúdo */
 .content {
