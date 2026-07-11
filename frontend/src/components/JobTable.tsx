@@ -7,9 +7,10 @@ interface JobTableProps{
 
 function JobTable({ jobs }: JobTableProps){
         return(
-            <table>
+            <table className="job-table">
                 <thead>
                     <tr>
+                        <th></th>
                         <th>Vaga</th>
                         <th>Empresa</th>
                         <th>URL</th>
@@ -20,12 +21,12 @@ function JobTable({ jobs }: JobTableProps){
                 <tbody>
                     {
                         jobs.map((job)=>(
-                            <tr key={job.id}>
+                            <tr key={job.id} className="job-row">
                                 <td>{job.id}</td>
                                 <td>{job.title}</td>
                                 <td>{job.company}</td>
-                                <td><a href="{job.url}">{job.url}</a></td>
-                                <td>{job.situacao}</td>
+                                <td><a href="{job.url}" className="job-link">{job.url}</a></td>
+                                <td className="job-status">{job.situacao}</td>
                             </tr>
                         )
 

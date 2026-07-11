@@ -8,7 +8,7 @@ function Jobs(){
         const vagas: Job[] = [
         {
             id: 1,
-            title: "Estágio Desenvolvimento",
+            title: "Estágio Desenvolvimento de Software",
             company: "Empresa X",
             url: "https://google.com",
             situacao: "Inscrito"

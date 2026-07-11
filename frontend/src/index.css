@@ -214,3 +214,45 @@ code {
   flex-direction: row;
 
 }
+
+.job-table{
+  width: 100%;
+  border-collapse: collapse;
+  border-color: var(--input-text);
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.job-table thead {
+  background-color: var(--input-text);
+  color: var(--bg);
+}
+
+.job-table th{
+  padding: 3px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.job-table td{
+  padding: 14px 14px;
+  border-bottom: 1px solid var(--input-text);
+}
+
+.job-row:hover{
+  background-color: #000;
+  opacity: 80%;
+
+}
+
+.job-link{
+  color: var(--text);
+  text-decoration: none;
+}
+
+.job-link:hover{
+  text-decoration: underline;
+}
+
+
