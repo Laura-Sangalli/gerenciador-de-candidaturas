@@ -1,7 +1,7 @@
 import React from "react";
 import '../index.css'
 
-function EditButton(){
+function EditJobMenu(){
 
     return(
         <div>
@@ -10,4 +10,4 @@ function EditButton(){
     );
 }
 
-export default EditButton;
+export default EditJobMenu;
