@@ -15,6 +15,7 @@ function JobTable({ jobs }: JobTableProps){
                         <th>Empresa</th>
                         <th>URL</th>
                         <th>Situação</th>
+                        <th></th>
                     </tr>
                 </thead>
 
@@ -27,6 +28,7 @@ function JobTable({ jobs }: JobTableProps){
                                 <td>{job.company}</td>
                                 <td><a href="{job.url}" className="job-link">{job.url}</a></td>
                                 <td className="job-status">{job.situacao}</td>
+                                <td><button>...</button></td>
                             </tr>
                         )
 
