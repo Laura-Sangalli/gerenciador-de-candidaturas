@@ -186,7 +186,7 @@ code {
 .app {
     position: relative;
     min-height: 100vh;
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* Fundo */
@@ -221,7 +221,6 @@ code {
   border-color: var(--input-text);
   margin-top: 2rem;
   border-radius: 12px;
-  overflow: hidden;
   border-color: #aa3bff;
   border-width: 0 0 12px 0;
   stroke-width: 0 0 12px 0;
@@ -266,18 +265,22 @@ width: 100%;
 
 .job_edit{
   position: relative;
+  display: inline-block;
 }
 
 .editJobMenu{
   position: absolute;
-  margin-left: -130px;
-  display: flex;
+  top: 100;
+  right: 0;
+
   background-color: #1f2028;
     width: 150px;
     height: 60px;
     display: flex;
   flex-direction: column;
   align-items: center;
+
+  z-index: 9999;
 
 }
 

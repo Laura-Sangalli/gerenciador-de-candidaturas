@@ -37,12 +37,14 @@ function JobTable({ jobs }: JobTableProps){
                                 <td>{job.company}</td>
                                 <td><a href="{job.url}" className="job-link">{job.url}</a></td>
                                 <td className="job-status">{job.situacao}</td>
-                                <td className="job_edit">
-                                    <button onClick={() => toggleMenu(job.id)}>...</button>
+                                <td>
+                                    <div className="job_edit">
+                                        <button onClick={() => toggleMenu(job.id)}>...</button>
 
-                                    {
-                                        oppenMenu === job.id && (<EditJobMenu/>)
-                                    }
+                                        {
+                                            oppenMenu === job.id && <EditJobMenu/>
+                                        }
+                                    </div>
                                 </td>
 
                             </tr>       
