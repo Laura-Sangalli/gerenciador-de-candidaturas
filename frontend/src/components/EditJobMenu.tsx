@@ -4,8 +4,11 @@ import '../index.css'
 function EditJobMenu(){
 
     return(
-        <div>
-
+        <div className="editJobMenu">
+            <a>
+                <button>Editar candidatura</button>
+                <button>Excluir candidatura</button>
+            </a>
         </div>
     );
 }

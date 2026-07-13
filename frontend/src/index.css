@@ -147,7 +147,7 @@ code {
   align-items: center;
   gap: 12px;
   margin-bottom: 2rem;
-  background-color: --bg;
+  background-color: var(--bg);
 }
 
 .campo_input label{
@@ -222,11 +222,20 @@ code {
   margin-top: 2rem;
   border-radius: 12px;
   overflow: hidden;
+  border-color: #aa3bff;
+  border-width: 0 0 12px 0;
+  stroke-width: 0 0 12px 0;
+
 }
 
 .job-table thead {
   background-color: var(--input-text);
   color: var(--bg);
+}
+
+.job-table_footer{
+height: 10px;
+width: 100%;
 }
 
 .job-table th{
@@ -255,4 +264,34 @@ code {
   text-decoration: underline;
 }
 
+.job_edit{
+  position: relative;
+}
 
+.editJobMenu{
+  position: absolute;
+  margin-left: -130px;
+  display: flex;
+  background-color: #1f2028;
+    width: 150px;
+    height: 60px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.editJobMenu button{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: #1f2028;
+}
+
+.editJobMenu button:hover{
+    background-color: #6b6375;
+}

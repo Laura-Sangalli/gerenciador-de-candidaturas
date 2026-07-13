@@ -12,6 +12,13 @@ function Jobs(){
             company: "Empresa X",
             url: "https://google.com",
             situacao: "Inscrito"
+        },
+                {
+            id: 2,
+            title: "Estágio Desenvolvimento de Software",
+            company: "Empresa X",
+            url: "https://google.com",
+            situacao: "Inscrito"
         }
     ];
 
