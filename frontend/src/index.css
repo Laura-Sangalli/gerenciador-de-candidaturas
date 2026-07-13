@@ -43,6 +43,7 @@
     --accent-bg: rgba(192, 132, 252, 0.15);
     --accent-border: rgba(192, 132, 252, 0.5);
     --social-bg: rgba(47, 48, 58, 0.5);
+    --text-menu: #adadad;
     --shadow:
     rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
     --input-text:#c084fc;
@@ -191,16 +192,12 @@ code {
 
 /* Fundo */
 .background-decoration {
-  display: flex;
     position: absolute;
     inset: 0;
     margin-top: -5cap;
-    width: 120%;
-    height: 120%;
-
+    width: max-content;
     z-index: 0;
     pointer-events: none;
-    stroke: none;
   }
 
 /* Conteúdo */
@@ -254,6 +251,7 @@ width: 100%;
 
 }
 
+
 .job-link{
   color: var(--text);
   text-decoration: none;
@@ -267,6 +265,7 @@ width: 100%;
   position: relative;
   display: inline-block;
 }
+
 
 .editJobMenu{
   position: absolute;
@@ -293,8 +292,61 @@ width: 100%;
     height: 30px;
     border: none;
     background-color: #1f2028;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-menu);
 }
 
 .editJobMenu button:hover{
-    background-color: #6b6375;
+    background-color: #302c35;
+    color: #fff;
 }
+
+.job-status{
+  border-radius: 5%;
+  padding: 4px 10px;
+  border-radius: 5cap;
+  font-weight: 500;
+}
+
+.status-inscrito{
+  background-color: rgb(104, 104, 51);
+  color: #fff;
+}
+
+.status-logica{
+  background-color: rgb(27, 80, 194);
+  color: #fff;
+}
+
+.status-idiomas{
+  background-color: rgb(167, 31, 121);
+  color: #fff;
+}
+
+.status-entrevista{
+  background-color: rgb(6, 79, 107);
+  color: #fff;
+}
+
+.status-dinamica{
+  background-color: rgb(131, 35, 155);
+  color: #fff;
+}
+
+.status-documentos{
+  background-color: #04a319;
+  color: #fff;
+}
+
+.status-salva{
+  background-color: #d67d07;
+  color: #fff;
+}
+
+.status-finalizada{
+  background-color: rgb(240, 43, 43);
+  color: #fff;
+}
+
+

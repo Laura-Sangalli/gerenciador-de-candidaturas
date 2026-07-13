@@ -1,4 +1,4 @@
-import  type { Job } from "../types/Job";
+import  type { Job, Situacao } from "../types/Job";
 import '../index.css'
 import { useState } from "react";
 import EditJobMenu from "./EditJobMenu";
@@ -9,6 +9,17 @@ interface JobTableProps{
 
 function JobTable({ jobs }: JobTableProps){
     
+    const statusClasses: Record<Situacao, string> = {
+        "Inscrito": "status-inscrito",
+        "Teste de lógica concluído": "status-logica",
+        "Teste de idiomas concluído": "status-idiomas",
+        "Entrevista realizada": "status-entrevista",
+        "Dinâmica realizada": "status-dinamica",
+        "Documentos Enviados": "status-documentos",
+        "Vaga salva": "status-salva",
+        "Vaga finalizada": "status-finalizada",
+    };
+
     const [oppenMenu, setOpenMenu] = useState<number>(0);
 
     const toggleMenu = (id:number) => {
@@ -36,7 +47,7 @@ function JobTable({ jobs }: JobTableProps){
                                 <td>{job.title}</td>
                                 <td>{job.company}</td>
                                 <td><a href="{job.url}" className="job-link">{job.url}</a></td>
-                                <td className="job-status">{job.situacao}</td>
+                                <td><span className={`job-status ${statusClasses[job.situacao]}`}>{job.situacao}</span></td>
                                 <td>
                                     <div className="job_edit">
                                         <button onClick={() => toggleMenu(job.id)}>...</button>
