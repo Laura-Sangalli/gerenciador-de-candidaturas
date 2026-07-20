@@ -148,7 +148,7 @@ code {
   align-items: center;
   gap: 12px;
   margin-bottom: 2rem;
-  background-color: var(--bg);
+
 }
 
 .campo_input label{
@@ -307,6 +307,7 @@ width: 100%;
   padding: 4px 10px;
   border-radius: 5cap;
   font-weight: 500;
+  font-size: 13.5px;
 }
 
 .status-inscrito{
