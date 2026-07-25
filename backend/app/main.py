@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-
+from datetime import date
 app = FastAPI()
 
 app.add_middleware(
@@ -17,6 +17,7 @@ class Job(BaseModel):
     company: str
     url: str
     status: str
+
 
 @app.get("/")
 def root():
