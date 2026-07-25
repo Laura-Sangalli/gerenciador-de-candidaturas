@@ -49,7 +49,7 @@ function JobTable({ jobs }: JobTableProps){
                                 <td>{job.company}</td>
                                 <td><a href="{job.url}" className="job-link">{job.url}</a></td>
                                 <td><span className={`job-status ${statusClasses[job.situacao]}`}>{job.situacao}</span></td>
-                                <td>01/01/2024</td>
+                                <td>{job.ultimaAtualizacao}</td>
                                 <td>
                                     <div className="job_edit">
                                         <button onClick={() => toggleMenu(job.id)}>...</button>
@@ -59,6 +59,7 @@ function JobTable({ jobs }: JobTableProps){
                                         }
                                     </div>
                                 </td>
+
 
                             </tr>       
                         )

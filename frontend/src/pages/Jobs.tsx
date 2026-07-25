@@ -5,6 +5,7 @@ import { CgToday } from "react-icons/cg";
 
 
 function Jobs(){
+    const today = new Date().toLocaleDateString("pt-BR");
 
         const vagas: Job[] = [
         {
@@ -13,55 +14,65 @@ function Jobs(){
             company: "Empresa X",
             url: "https://google.com",
             situacao: "Inscrito", 
+            ultimaAtualizacao: today
         },
                 {
             id: 2,
             title: "Estágio Desenvolvimento de Software",
             company: "Empresa X",
             url: "https://google.com",
-            situacao: "Teste de lógica concluído"
+            situacao: "Teste de lógica concluído",
+            ultimaAtualizacao: today
         },
                 {
             id: 3,
             title: "Estágio Desenvolvimento de Software",
             company: "Empresa X",
             url: "https://google.com",
-            situacao: "Teste de idiomas concluído"
+            situacao: "Teste de idiomas concluído",
+            ultimaAtualizacao: today
         },
                 {
             id: 4,
             title: "Estágio Desenvolvimento de Software",
             company: "Empresa X",
             url: "https://google.com",
-            situacao: "Entrevista realizada"
+            situacao: "Entrevista realizada",
+            ultimaAtualizacao: today
         },
                 {
             id: 5,
             title: "Estágio Desenvolvimento de Software",
             company: "Empresa X",
             url: "https://google.com",
-            situacao: "Dinâmica realizada"
+            situacao: "Dinâmica realizada",
+            ultimaAtualizacao: today
         },
                 {
             id: 6,
             title: "Estágio Desenvolvimento de Software",
             company: "Empresa X",
             url: "https://google.com",
-            situacao: "Documentos Enviados"
+            situacao: "Documentos Enviados",
+            ultimaAtualizacao: today
         },
                 {
             id: 7,
             title: "Estágio Desenvolvimento de Software",
             company: "Empresa X",
             url: "https://google.com",
-            situacao: "Vaga salva"
+            situacao: "Vaga salva",
+            ultimaAtualizacao: today
+
         },
                         {
             id: 8,
             title: "Estágio Desenvolvimento de Software",
             company: "Empresa X",
             url: "https://google.com",
-            situacao: "Vaga finalizada"
+            situacao: "Vaga finalizada",
+            ultimaAtualizacao: today
+
         }
     ];
 
